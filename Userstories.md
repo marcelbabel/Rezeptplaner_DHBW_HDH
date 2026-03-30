@@ -234,7 +234,8 @@ Nutzer können eine kumulierte Einkaufsliste auf Basis mehrerer ausgewählter Re
 * **URL:** `http://localhost:3000/api/recipes/shopping-list`
 * **Body (JSON):**
 {
-  "recipeIds": ["ID_1", "ID_2", "ID_3"]
+  "recipeIds": ["ID_1", "ID_2", "ID_3"],
+  "userId": "ID_DES_CREATORS"
 }
 * **Erwartetes Ergebnis:** Status 200. Ein JSON-Array, das alle extrahierten Zutaten summiert darstellt (z.B. werden "200g Mehl" und "300g Mehl" aus zwei verschiedenen Rezepten sauber zu "500g Mehl" zusammengefasst), sowie der Zeitstempel für die Löschung nach sieben Tagen.
 
